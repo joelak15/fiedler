@@ -1,0 +1,12 @@
+<div>
+  <mat-list>
+    <mat-list-item *ngFor="let employe of employes">
+      <img matListAvatar src="https://ui-avatars.com/api/?name=+{{employe.nomEmploye}}" alt="profil">
+      <h2 matLine> {{employe.nomEmploye}} {{employe.prenomEmploye}} </h2>
+      <p matLine>
+        <span>  </span>
+        <span class="demo-2"></span>
+      </p>
+    </mat-list-item>
+  </mat-list>
+</div>

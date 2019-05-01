@@ -1,0 +1,25 @@
+
+<div class="row">
+  <div class="col-md-12 pad-10">
+    <button type="submit" class="btn btn-primary" (click)="goToAddEmploye()">
+      <span class="glyphicon glyphicon-floppy-disk"></span> Ajouter 
+    </button>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nom</th>
+    <th>Prenom</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employe of employes">
+    <td>{{ employe.idEmploye }}</td>
+    <td>{{ employe.nomEmploye }}</td>
+    <td>{{ employe.prenomEmploye }}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Date</th>
+      <th>Employe</th>
+      <th>heure arrivee</th>
+      <th>heure depart</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let pointage of pointages">
+      <td>{{ pointage.idPointage }}</td>
+      <td>{{ pointage.datePointage }}</td>
+      <td>{{ pointage.idPointEmploye }}</td>
+      <td>{{ pointage.arrivePointage }}</td>
+      <td>{{ pointage.departPointage }}</td>
+    </tr>
+    </tbody>
+  </table>
