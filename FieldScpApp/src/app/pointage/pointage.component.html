@@ -9,7 +9,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let pointage of pointages">
+    <tr *ngFor="let pointage of pointages; let i = index">
       <td>{{ pointage.idPointage }}</td>
       <td>{{ pointage.datePointage }}</td>
       <td>{{ pointage.idPointEmploye }}</td>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { EmployeService } from '../employes/employes.service';
 import { Employe} from '../employes/employes.interface';
 
@@ -24,4 +24,13 @@ export class AcceuilEmployeListComponent implements OnInit {
       (error) => console.log(error)
     );
 }
+
+addPointage(){
+      console.log(this.trackById);
+}
+
+trackById(index, item){
+  return item.idEmploye;
+}
+
 }
