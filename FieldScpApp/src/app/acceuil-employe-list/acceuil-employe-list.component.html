@@ -1,13 +1,11 @@
 <div>
   <mat-action-list>
-    <mat-list-item *ngFor="let employe of employes; trackBy: trackById"
-     (click)="addPointage()">
-      <img matListAvatar src="https://ui-avatars.com/api/?name=+{{employe.nomEmploye}}" alt="profil">
-      <h2 matLine> {{employe.nomEmploye}} {{employe.prenomEmploye}} </h2>
-      <p matLine>
-        <span>  </span>
-        <span class="demo-2"></span>
-      </p>
-    </mat-list-item>
+   <app-employe-acceuil-template *ngFor="let employe of employes; let i = index"
+   [indexOfEmploye]= "i"
+   [id]="employe.idEmploye"
+   [nom]= "employe.nomEmploye"
+   [prenom]= "employe.prenomEmploye"
+   >
+   </app-employe-acceuil-template>
   </mat-action-list>
 </div>

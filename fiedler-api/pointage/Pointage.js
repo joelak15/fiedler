@@ -13,10 +13,11 @@ var Pointage = {
             Pointage.arrivePointage,
             Pointage.departPointage], callback);
     },
+    
     updatepointage: function (Pointage, callback) {
         return db.query('Update Pointage Set Pointage.departPointage = ? where idPointage = ?',
         [Pointage.departPointage,
-            Pointage.id
+            Pointage.idPointage
         ], callback);
     },
 }

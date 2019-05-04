@@ -1,0 +1,14 @@
+ 
+ <mat-list-item mwlConfirmationPopover
+ [popoverTitle]="'Confirmation'"
+ [popoverMessage]="'êtes-vous sûr?'"
+ placement="top"
+ (confirm)="pointage()"
+ type="submit">
+      <img matListAvatar src="https://ui-avatars.com/api/?name=+{{nom}}" alt="profil">
+      <h2 matLine> {{nom | uppercase}} -- {{prenom}} </h2>
+      <p matLine>
+        <span>  </span>
+        <span class="demo-2"></span>
+      </p>
+</mat-list-item>

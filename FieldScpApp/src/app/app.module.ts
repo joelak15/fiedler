@@ -29,6 +29,8 @@ import { FormsModule } from '@angular/forms';
 import { AcceuilEmployeListComponent } from './acceuil-employe-list/acceuil-employe-list.component';
 import { PointageComponent } from './pointage/pointage.component';
 import { PointageService } from './pointage/pointage.service';
+import { EmployeAcceuilTemplateComponent } from './employe-acceuil-template/employe-acceuil-template.component';
+import { DatePipe } from '@angular/common';
 
 
 const appRoutes: Routes = [
@@ -46,7 +48,8 @@ const appRoutes: Routes = [
     EmployesComponent,
     AjoutEmployeComponent,
     AcceuilEmployeListComponent,
-    PointageComponent
+    PointageComponent,
+    EmployeAcceuilTemplateComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +76,8 @@ const appRoutes: Routes = [
   ],
   providers: [
     EmployeService,
-    PointageService
+    PointageService,
+    DatePipe
   ],
   bootstrap: [AppComponent]
 })

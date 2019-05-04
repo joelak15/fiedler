@@ -22,7 +22,7 @@ router.post('/', function (req, res) {
             res.status(400).json(err);
         }
         else {
-            req.body.id = count.insertId;
+            req.body.idPointage = count.insertId;
             res.json(req.body);
         }
     });
