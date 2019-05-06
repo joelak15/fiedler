@@ -14,6 +14,7 @@ export class EmployeAcceuilTemplateComponent implements OnInit {
   @Input() id: number;
   @Input() nom: string;
   @Input() prenom: string;
+  @Input() fonction: string;
 
   listStatus: boolean = true;
   popTitle: string;
@@ -30,8 +31,6 @@ export class EmployeAcceuilTemplateComponent implements OnInit {
 
   ngOnInit() {
   }
-
-
 
   pointage() {
 

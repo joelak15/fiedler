@@ -15,6 +15,10 @@ export class PointageService {
     return  this.http.get(`${this.url}/pointages`);
   }
 
+  getPointageById(id : number){
+    return this.http.get(`${this.url}/pointages/pointage?idPointEmploye=`+id);
+  }
+
   createPointage(data: Pointage) {
     this.http.post<Pointage>(`${this.url}/pointages`, data)
       .subscribe(

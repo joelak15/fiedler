@@ -14,11 +14,10 @@
     <tr *ngFor="let pointage of pointages">
       <td>{{ pointage.idPointage }}</td>
       <td>{{ pointage.datePointage }}</td>
-      <td>{{getNameById(pointage.idPointEmploye)}}</td>
+      <td>{{getNameById()}}</td>
       <td>{{ pointage.arrivePointage }}</td>
       <td>{{ pointage.departPointage }}</td>
       <td>{{sommeTime(pointage.arrivePointage, pointage.departPointage)}}</td>
-      <td><a [routerLink]="[pointage.idPointEmploye]">plus</a></td>
     </tr>
     </tbody>
   </table>

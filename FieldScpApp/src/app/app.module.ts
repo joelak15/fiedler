@@ -31,13 +31,17 @@ import { PointageComponent } from './pointage/pointage.component';
 import { PointageService } from './pointage/pointage.service';
 import { EmployeAcceuilTemplateComponent } from './employe-acceuil-template/employe-acceuil-template.component';
 import { DatePipe } from '@angular/common';
+import { PointageEmployeComponent } from './pointage-employe/pointage-employe.component';
 
 
 const appRoutes: Routes = [
+  { path: '', component: AcceuilEmployeListComponent },
   {path: 'employe', component: EmployesComponent},
+  {path: 'dashboard', component: DashboardComponent},
   { path: 'ajout-employe', component: AjoutEmployeComponent },
   { path: 'acceuil-employe-list', component: AcceuilEmployeListComponent },
   {path: 'pointage', component: PointageComponent},
+  {path: 'pointage/:id', component: PointageEmployeComponent},
 
 ];
 
@@ -49,7 +53,8 @@ const appRoutes: Routes = [
     AjoutEmployeComponent,
     AcceuilEmployeListComponent,
     PointageComponent,
-    EmployeAcceuilTemplateComponent
+    EmployeAcceuilTemplateComponent,
+    PointageEmployeComponent
   ],
   imports: [
     BrowserModule,

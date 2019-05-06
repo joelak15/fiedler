@@ -13,6 +13,8 @@
     <th>ID</th>
     <th>Nom</th>
     <th>Prenom</th>
+    <th>Fonction</th>
+    <th></th>
   </tr>
   </thead>
   <tbody>
@@ -20,6 +22,8 @@
     <td>{{ employe.idEmploye }}</td>
     <td>{{ employe.nomEmploye }}</td>
     <td>{{ employe.prenomEmploye }}</td>
+    <td>{{ employe.fonctionEmploye }}</td>
+    <td><a routerLink="/pointage/{{ employe.idEmploye }}">plus</a></td>
   </tr>
   </tbody>
 </table>

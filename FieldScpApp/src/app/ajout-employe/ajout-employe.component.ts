@@ -12,7 +12,8 @@ export class AjoutEmployeComponent implements OnInit {
   employes: Employe = {
     idEmploye: null,
     nomEmploye: '',
-    prenomEmploye: ''
+    prenomEmploye: '',
+    fonctionEmploye: ''
   };
 
   constructor(private employeService: EmployeService) { }
