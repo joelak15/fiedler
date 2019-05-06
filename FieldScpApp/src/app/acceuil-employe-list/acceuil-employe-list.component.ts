@@ -25,12 +25,4 @@ export class AcceuilEmployeListComponent implements OnInit {
     );
 }
 
-addPointage(){
-      console.log(this.trackById);
-}
-
-trackById(index, item){
-  return item.idEmploye;
-}
-
 }

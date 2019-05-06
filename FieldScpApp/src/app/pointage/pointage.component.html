@@ -6,15 +6,19 @@
       <th>Employe</th>
       <th>heure arrivee</th>
       <th>heure depart</th>
+      <th>total heure</th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let pointage of pointages; let i = index">
+    <tr *ngFor="let pointage of pointages">
       <td>{{ pointage.idPointage }}</td>
       <td>{{ pointage.datePointage }}</td>
-      <td>{{ pointage.idPointEmploye }}</td>
+      <td>{{getNameById(pointage.idPointEmploye)}}</td>
       <td>{{ pointage.arrivePointage }}</td>
       <td>{{ pointage.departPointage }}</td>
+      <td>{{sommeTime(pointage.arrivePointage, pointage.departPointage)}}</td>
+      <td><input type="button" value="more" ng-click="getMore(pointage.idPointEmploye)" /></td>
     </tr>
     </tbody>
   </table>
