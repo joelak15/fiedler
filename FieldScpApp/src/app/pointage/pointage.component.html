@@ -11,8 +11,8 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let pointage of pointages">
-      <td>{{ pointage.idPointage }}</td>
+    <tr *ngFor="let pointage of pointages, let i = index">
+      <td>{{ i }}</td>
       <td>{{ pointage.datePointage }}</td>
       <td>{{getNameById(pointage.idPointEmploye)}}</td>
       <td>{{ pointage.arrivePointage }}</td>

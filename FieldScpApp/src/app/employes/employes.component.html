@@ -18,8 +18,8 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let employe of employes">
-    <td>{{ employe.idEmploye }}</td>
+  <tr *ngFor="let employe of employes, let i = index">
+    <td>{{ i }}</td>
     <td>{{ employe.nomEmploye }}</td>
     <td>{{ employe.prenomEmploye }}</td>
     <td>{{ employe.fonctionEmploye }}</td>

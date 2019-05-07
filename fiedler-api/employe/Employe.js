@@ -6,7 +6,7 @@ var Employe = {
         // recuperation liste des employes dans la base de donnee mysql
     getemployes: function(callback)
     {
-        return db.query('SELECT * from Employe', callback);
+        return db.query('SELECT * from Employe order by nomEmploye asc', callback);
     },
 
         // creation d'un employe dans la base de donnee mysql

@@ -5,13 +5,13 @@ var Pointage = {
     // recuperation liste de pointage dans la base de donnee mysql
     getpointages: function(callback)
     {
-        return db.query('SELECT * from Pointage', callback);
+        return db.query('SELECT * from Pointage order by idPointage desc', callback);
     },
 
     // recuperation liste de pointage selon un id dans la base de donnee mysql
     getpointagesid: function(Pointage, callback)
     {
-        return db.query('SELECT * from Pointage where idPointEmploye = ?',
+        return db.query('SELECT * from Pointage where idPointEmploye = ? order by idPointage desc',
          [Pointage.idPointEmploye],
          callback);
     },

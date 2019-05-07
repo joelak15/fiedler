@@ -1,13 +1,13 @@
  
- <mat-list-item [ngClass] = "{'list-group-item': true, 'list-group-item-success': listStatus === 'false'}" 
+ <mat-list-item 
  mwlConfirmationPopover
- [popoverTitle]="'Confirmation'"
+ [popoverTitle]="'Enregistrement de votre heure'"
  [popoverMessage]="'êtes-vous sûr?'"
  placement="top"
  (confirm)="pointage()"
  type="submit">
       <img matListAvatar src="https://ui-avatars.com/api/?name=+{{nom}}" alt="profil">
-      <h2 matLine> {{nom | uppercase}} -- {{prenom}} </h2>
+      <h2 matLine> {{nom | uppercase}} {{prenom}} </h2>
       <p matLine>
         <span>{{fonction | uppercase}}  </span>
       </p>
